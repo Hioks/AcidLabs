@@ -13,7 +13,8 @@
 			
 	}
 	
-	/*function encodeImageFileAsURL(){
+	/*Javascript base 64
+	function encodeImageFileAsURL(){
 
 	    var filesSelected = document.getElementById("images").files;
 	    if (filesSelected.length > 0){
@@ -26,8 +27,6 @@
 	            document.getElementById("hdnFile").value = srcData;
 	        }
 	        fileReader.readAsDataURL(fileToLoad);
-	        
-	        
 	    }
 	}*/
 	
@@ -46,7 +45,7 @@
 			</p>
 			<p>
 				Archivo: <input type="file" name="images" id="images" >
-				<input type="text" name="hdnFile" id="hdnFile">
+				
 			</p>			
 			<p>
 				<input type="button" value="Enviar datos" onclick="validacion()">
