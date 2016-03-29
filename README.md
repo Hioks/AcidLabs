@@ -8,7 +8,7 @@ Se generó una solución en Spring Framework 3, junto a un servidor Apache CXF c
 
 ## Installación
 
-Se uso eclipse como ide sólamente se debe descargar el proyecto y correrlo bajo éste ide, se usó Apache Tomcat 7 como servidor de aplicaciones.
+Se uso eclipse como ide, sólamente se debe descargar el proyecto e instalarlo ya que se subieron todas las librerías necesarias. Se usó Apache Tomcat 7 como servidor de aplicaciones bajo eclipse.
 
 ## Tests
 
