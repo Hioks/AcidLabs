@@ -1,0 +1,59 @@
+<html>
+<head>
+<script type="text/javascript">
+	function validacion() {
+		if (document.getElementById("username").value == "" ||  document.getElementById("images").value == "")
+			alert("Complete todos los datos");
+		else{
+			 //encodeImageFileAsURL();
+			document.forms[0].submit();
+			
+		}
+			
+			
+	}
+	
+	/*function encodeImageFileAsURL(){
+
+	    var filesSelected = document.getElementById("images").files;
+	    if (filesSelected.length > 0){
+	        var fileToLoad = filesSelected[0];
+	        var fileReader = new FileReader();
+
+	        fileReader.onload = function(fileLoadedEvent) {
+	            var srcData = fileLoadedEvent.target.result; // <--- data: base64
+	            console.log(srcData);
+	            document.getElementById("hdnFile").value = srcData;
+	        }
+	        fileReader.readAsDataURL(fileToLoad);
+	        
+	        
+	    }
+	}*/
+	
+	
+</script>
+
+<title>Formulario Usuarios</title>
+</head>
+<body>
+	<h1>Formulario Usuarios</h1>
+	<form action="userservlet.do" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Formulario Usuarios</legend>
+			<p>
+				Usuario: <input type="text" name="username" id="username">
+			</p>
+			<p>
+				Archivo: <input type="file" name="images" id="images" >
+				<input type="text" name="hdnFile" id="hdnFile">
+			</p>			
+			<p>
+				<input type="button" value="Enviar datos" onclick="validacion()">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
+
+
